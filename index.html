@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Travel Booking Form</h1>
+    <form id="mainForm" onsubmit="return validateForm()">
+      <label for="name">Traveler Name</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+      <label for="destination">Destination</label>
+      <input type="text" id="destination" name="destination">
+      <label for="travelers">Travelers Count</label>
+      <input type="number" id="travelers" name="travelers">
+      <label for="passport">Passport Number</label>
+      <input type="text" id="passport" name="passport">
+      <p id="errorMessage"></p>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
